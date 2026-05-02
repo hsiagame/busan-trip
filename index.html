@@ -8,6 +8,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="釜山鑲金">
+  <meta name="theme-color" content="#1a3a5c">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -87,7 +94,7 @@
         <div class="flex-1 mx-4 text-center">
           <div class="text-white/80 text-xs mb-1">CI 188</div>
           <div class="relative"><div class="border-t-2 border-dashed border-white/40"></div><div class="absolute right-0 top-1/2 -translate-y-1/2 text-white text-lg">✈</div></div>
-          <div class="text-white/60 text-xs mt-1">3h 20m</div>
+          <div class="text-white/60 text-xs mt-1">2h 20m</div>
         </div>
         <div class="text-right">
           <div class="text-white text-3xl font-bold">11:15</div>
@@ -123,17 +130,17 @@
       </div>
       <div class="px-6 pb-4 flex items-center justify-between">
         <div>
-          <div class="text-white text-3xl font-bold">19:50</div>
+          <div class="text-white text-3xl font-bold">20:00</div>
           <div class="text-white/85 font-bold">PUS</div>
           <div class="text-white/60 text-xs mt-0.5">金海國際機場</div>
         </div>
         <div class="flex-1 mx-4 text-center">
           <div class="text-white/80 text-xs mb-1">CI 187</div>
           <div class="relative"><div class="border-t-2 border-dashed border-white/40"></div><div class="absolute right-0 top-1/2 -translate-y-1/2 text-white text-lg">✈</div></div>
-          <div class="text-white/60 text-xs mt-1">1h 40m</div>
+          <div class="text-white/60 text-xs mt-1">2h 20m</div>
         </div>
         <div class="text-right">
-          <div class="text-white text-3xl font-bold">21:30</div>
+          <div class="text-white text-3xl font-bold">21:20</div>
           <div class="text-white/85 font-bold">TPE</div>
           <div class="text-white/60 text-xs mt-0.5">桃園第1航站</div>
         </div>
@@ -152,7 +159,6 @@
       <div>• 護照有效期需 6 個月以上</div>
       <div>• 行動電源<strong>禁止託運</strong>，需隨身手提</div>
       <div>• 暖暖包（2026新規）也需手提，不可託運</div>
-      <div>• 金海機場→市區可搭利木津巴士（약60분）</div>
     </div>
   </div>
 
@@ -621,8 +627,8 @@ createApp({
           dateStr:'5/10日',emoji:'🌟',title:'釜山初體驗',city:'Busan',wc:'busan',wi:0,
           hotel:{name:'Marysol Hotel',addr:'釜山廣域市海雲台區海雲台海邊路263',phone:'+82-51-746-1234'},
           locations:[
-            {id:'d0l1',type:'attraction',emoji:'🏘️',name:'甘川洞文化村',nameKo:'감천문화마을',subtitle:'釜山馬丘比丘，贈送地圖',lat:35.0976,lng:129.0106,_open:false,googleMapsUrl:'https://www.google.com/maps/search/?api=1&query=감천문화마을+부산',naverMapsUrl:'https://map.naver.com/v5/search/감천문화마을',guideUrl:'https://tsnio.com/gamcheon-culture-village/',story:'釜山版馬丘比丘！原為韓戰難民聚居的山坡地，現搖身一變成為藝術村。彩色房屋順著山勢層疊而上，在制高點可一覽港灣美景。入口有免費地圖。⭐必看：小王子雕像、魚壁畫。必買：明信片、手工陶瓷。',notes:''},
-            {id:'d0l2',type:'lunch',emoji:'🥣',name:'釜山豬肉湯飯',nameKo:'부산돼지국밥',subtitle:'★韓國美食100選★',lat:35.1052,lng:129.0248,_open:false,googleMapsUrl:'https://www.google.com/maps/search/?api=1&query=부산돼지국밥',naverMapsUrl:'https://map.naver.com/v5/search/부산돼지국밥',guideUrl:'',story:'釜山最具代表性的在地美食！豬骨湯長時間熬煮，濃郁不腥。📌必點：돼지국밥+순대(豬血腸)。自行加鹽、大醬調味！',notes:''},
+            {id:'d0l1',type:'lunch',emoji:'🥣',name:'釜山豬肉湯飯',nameKo:'부산돼지국밥',subtitle:'★韓國美食100選★',lat:35.1052,lng:129.0248,_open:false,googleMapsUrl:'https://www.google.com/maps/search/?api=1&query=부산돼지국밥',naverMapsUrl:'https://map.naver.com/v5/search/부산돼지국밥',guideUrl:'',story:'釜山最具代表性的在地美食！豬骨湯長時間熬煮，濃郁不腥。📌必點：돼지국밥+순대(豬血腸)。自行加鹽、大醬調味！',notes:''},
+            {id:'d0l2',type:'attraction',emoji:'🏘️',name:'甘川洞文化村',nameKo:'감천문화마을',subtitle:'釜山馬丘比丘，贈送地圖',lat:35.0976,lng:129.0106,_open:false,googleMapsUrl:'https://www.google.com/maps/search/?api=1&query=감천문화마을+부산',naverMapsUrl:'https://map.naver.com/v5/search/감천문화마을',guideUrl:'https://tsnio.com/gamcheon-culture-village/',story:'釜山版馬丘比丘！原為韓戰難民聚居的山坡地，現搖身一變成為藝術村。彩色房屋順著山勢層疊而上，在制高點可一覽港灣美景。入口有免費地圖。⭐必看：小王子雕像、魚壁畫。必買：明信片、手工陶瓷。',notes:''},
             {id:'d0l3',type:'dinner',emoji:'🥘',name:'【鳳雛】安東粉絲燉雞',nameKo:'봉추찜닭',subtitle:'★人氣美食★',lat:35.1577,lng:129.1181,_open:false,googleMapsUrl:'https://www.google.com/maps/search/?api=1&query=봉추찜닭+부산',naverMapsUrl:'https://map.naver.com/v5/search/봉추찜닭',guideUrl:'',story:'안동찜닭人氣名店！整雞+粉絲+蔬菜以甜辣醬汁燉煮，粉絲吸滿醬汁是最大享受。📌必點：중份 + 추가면(加粉絲)！',notes:''},
             {id:'d0l4',type:'snack',emoji:'🍗',name:'宵夜：韓國國民炸雞+飲料',nameKo:'치맥',subtitle:'每房一份，特別贈送',lat:null,lng:null,_open:false,googleMapsUrl:'',naverMapsUrl:'',guideUrl:'',story:'치맥=치킨+맥주，韓國的國民組合！韓式炸雞皮脆汁多。在房間享用是釜山第一夜的完美句點！',notes:''},
           ]
@@ -790,6 +796,13 @@ createApp({
   },
   mounted(){this.loadStorage();this.fetchWeather();},
 }).mount('#app');
+</script>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('sw.js').catch((err) => console.warn('SW registration failed:', err));
+    });
+  }
 </script>
 </body>
 </html>
